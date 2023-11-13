@@ -10,7 +10,7 @@ WORKDIR /opt/node-exporter
 ENV PATH /opt/node-exporter:$PATH
 
 # https://github.com/prometheus/node_exporter/releases
-ENV NODE_EXPORTER_VERSION 1.6.1
+ENV NODE_EXPORTER_VERSION 1.7.0
 
 RUN set -ex; \
 	dpkgArch="$(dpkg --print-architecture)"; \
