@@ -12,7 +12,7 @@
     "version": "1.6.21-1~deb11u0"
   },
   "dind": {
-    "version": ""
+    "version": "65cfcc28ab37cb75e1560e4b4738719c07c6618e"
   },
   "engine": {
     "sha256": "5f1d31267b9ce639010a112da50dd709111216c20766b2984be74ccf8767cb2e",
