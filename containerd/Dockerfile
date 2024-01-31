@@ -23,7 +23,7 @@ RUN set -eux; \
 	chmod +x /usr/local/bin/dind
 
 # https://github.com/opencontainers/runc/releases
-ENV RUNC_VERSION 1.1.11
+ENV RUNC_VERSION 1.1.12
 RUN set -eux; \
 # TODO multiple architectures
 	wget -O /usr/local/bin/runc "https://github.com/opencontainers/runc/releases/download/v${RUNC_VERSION}/runc.amd64" --progress=dot:giga; \
@@ -32,7 +32,7 @@ RUN set -eux; \
 	runc --version
 
 # https://github.com/containerd/containerd/releases
-ENV CONTAINERD_VERSION 1.7.12
+ENV CONTAINERD_VERSION 1.7.13
 RUN set -eux; \
 # TODO multiple architectures
 	wget -O containerd.tar.gz "https://github.com/containerd/containerd/releases/download/v${CONTAINERD_VERSION}/containerd-${CONTAINERD_VERSION}-linux-amd64.tar.gz" --progress=dot:giga; \
