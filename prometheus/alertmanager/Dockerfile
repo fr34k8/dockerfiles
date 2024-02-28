@@ -12,7 +12,7 @@ WORKDIR /opt/alertmanager
 ENV PATH /opt/alertmanager:$PATH
 
 # https://github.com/prometheus/alertmanager/releases
-ENV ALERTMANAGER_VERSION 0.26.0
+ENV ALERTMANAGER_VERSION 0.27.0
 
 RUN set -eux; \
 	\
