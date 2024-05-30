@@ -4,9 +4,9 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM python:3.9-alpine3.17
+FROM python:3.10-alpine3.17
 
-ENV BEETS_VERSION 1.6.0
+ENV BEETS_VERSION 2.0.0
 
 RUN set -eux; \
 	pip install --no-cache-dir "beets == $BEETS_VERSION"; \
