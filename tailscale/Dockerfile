@@ -14,7 +14,7 @@ RUN set -eux; \
 	rm -rf /var/lib/apt/lists/*
 
 # https://pkgs.tailscale.com/stable/#static
-ENV TAILSCALE_VERSION 1.75.0-pre
+ENV TAILSCALE_VERSION 1.76.0
 
 RUN set -eux; \
 	dpkgArch="$(dpkg --print-architecture)"; \
