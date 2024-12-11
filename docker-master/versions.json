@@ -1,16 +1,16 @@
 {
-  "version": "d3cc051f50733848f153ccf6a99259acec90d265",
+  "version": "7faa4ecfbfe5f641578931ff120c6e0f8faae16a",
   "go": {
     "version": "1.22.0"
   },
   "cli": {
-    "version": "ba1a15433be5fe91edacd09b0c133f5f137ba5e2",
+    "version": "26526f99704811601f5ef54d9143fa10dc9ad629",
     "go": {
       "version": "1.22.0"
     }
   },
   "buildx": {
-    "version": "71c78897192730a2a22f74310f15d0fbf93a157f",
+    "version": "3e3242cfdda23ab9077dde54479a74d26fcc2242",
     "go": {
       "version": "1.22.0"
     }
