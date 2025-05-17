@@ -12,7 +12,7 @@ WORKDIR /opt/prometheus
 ENV PATH /opt/prometheus:$PATH
 
 # https://github.com/prometheus/prometheus/releases
-ENV PROMETHEUS_VERSION 3.2.1
+ENV PROMETHEUS_VERSION 3.3.1
 
 RUN set -ex; \
 	\
@@ -31,20 +31,20 @@ RUN set -ex; \
 	\
 	filename="prometheus-${PROMETHEUS_VERSION}.linux-${promArch}.tar.gz"; \
 	case "$filename" in \
-		'prometheus-3.2.1.linux-386.tar.gz') sha256='e1b222c4d6a3bbaff2412173cbd25d38e3927835464251c27097a2a2ee9c4939' ;; \
-		'prometheus-3.2.1.linux-amd64.tar.gz') sha256='a622e3007c9109a7f470e1433cbd29bf392596715cf7eea8b81b37fa9d26b7be' ;; \
-		'prometheus-3.2.1.linux-arm64.tar.gz') sha256='f2dec3178f1181c1b795b275750d056e71ead13f7fbfe08b76834c4ec20b748e' ;; \
-		'prometheus-3.2.1.linux-armv5.tar.gz') sha256='4e977dc60ff80255662f40eaf7c7d602e8c7e56bb6b93baebaf2b6cab86c1b7e' ;; \
-		'prometheus-3.2.1.linux-armv6.tar.gz') sha256='c6e019d7db1f9e324cf54718596da431a2692baba524efd7ab026c4020a2ae16' ;; \
-		'prometheus-3.2.1.linux-armv7.tar.gz') sha256='5ccebc05700bf4f1c8adb577977e3b7a65a3a0e3581d33d58204e24ef50e2088' ;; \
-		'prometheus-3.2.1.linux-mips.tar.gz') sha256='ff0c16b63a3b8eadb8232ead82bc278ef03a6b5661c0c1930e843361c9fb5bd5' ;; \
-		'prometheus-3.2.1.linux-mips64.tar.gz') sha256='882b097ba377a6f7db727310e5c3ba37866297243a89fe4303bedf4230bf8209' ;; \
-		'prometheus-3.2.1.linux-mips64le.tar.gz') sha256='fa2259191fc92879f3b88944bf3183b5d0bb63077ae62f0d3071936b743b56a2' ;; \
-		'prometheus-3.2.1.linux-mipsle.tar.gz') sha256='9fd97352fb5f501d3f1fa904982b598ba6e040baf06cbcda3ba8f7db2bfcaeb0' ;; \
-		'prometheus-3.2.1.linux-ppc64.tar.gz') sha256='9dbe925df573a81359929b2df834cb77e7c1ffc5e3e251dd06780e568b9a0e69' ;; \
-		'prometheus-3.2.1.linux-ppc64le.tar.gz') sha256='19ca0e92e247ed806464f08fec65dcc06f35be30033745b40e0fc411f41cb1e6' ;; \
-		'prometheus-3.2.1.linux-riscv64.tar.gz') sha256='5c3e069086f0c1e950d03d444611f33586f2c5f0bdb4df9ac89e53c6831baf8a' ;; \
-		'prometheus-3.2.1.linux-s390x.tar.gz') sha256='1ef73ddcf2be28ba36090bc6af61c6fd9a8d17891156a2c61cf62ebf0cdc90c5' ;; \
+		'prometheus-3.3.1.linux-386.tar.gz') sha256='62cf3b5d1a03916997f3149362ca28e4cad5ae048331dd37535185b5ab8a3f24' ;; \
+		'prometheus-3.3.1.linux-amd64.tar.gz') sha256='e22600b314f65fd180fe17c0afeea85ed8484e924fc589c2331b084813699ef0' ;; \
+		'prometheus-3.3.1.linux-arm64.tar.gz') sha256='6e3b24c13c55bb2f0e05248327276e6ad6e96ceea4865296a41cbbc092dd45ea' ;; \
+		'prometheus-3.3.1.linux-armv5.tar.gz') sha256='50a31c5042c08721a72bb0a99a899f0e882bb82f6b02999cecd3ea39f9f3356c' ;; \
+		'prometheus-3.3.1.linux-armv6.tar.gz') sha256='eeb48b69c43b68335d9ab394a0dea9b5ceca8b1d23e272a17934d76a196e59fe' ;; \
+		'prometheus-3.3.1.linux-armv7.tar.gz') sha256='78c5f6b3a0a5f04a9bbfe7a5396e3826d73082226f4712f8ab2f99eedc0a10ee' ;; \
+		'prometheus-3.3.1.linux-mips.tar.gz') sha256='b4a36b66952683f8e1e94372f9d75b764d83391910a56f8327e63f87babcad18' ;; \
+		'prometheus-3.3.1.linux-mips64.tar.gz') sha256='cd3ef7a68b437cb588ee44e7a47781b1dae7376c6e2099a36efd993ba0ff1284' ;; \
+		'prometheus-3.3.1.linux-mips64le.tar.gz') sha256='b4659e1c0fbe0ffcba1fab774221711f963d2f4fee5a6a411ff71dbad01ab85b' ;; \
+		'prometheus-3.3.1.linux-mipsle.tar.gz') sha256='7c7bd039ab3c81096278ad6789198aab0b14ac9354016ab62e38a026cb3df31e' ;; \
+		'prometheus-3.3.1.linux-ppc64.tar.gz') sha256='f1931b3b1300176eb224344a83570407d5b1fbe29e979c13516c2663e75c87c5' ;; \
+		'prometheus-3.3.1.linux-ppc64le.tar.gz') sha256='aaa5f2af80877b0e6002b5f3e3232fcfb66e74e05c86a8332a3f6cf988bd42fd' ;; \
+		'prometheus-3.3.1.linux-riscv64.tar.gz') sha256='d34285b0cffe362eba4bdbb0c7b4ce0ea67f4595bded40505e3b4f6fb0b4059a' ;; \
+		'prometheus-3.3.1.linux-s390x.tar.gz') sha256='4c6583ea784d9adc905331c9327066351a7ba331d0b3a5047fbf95a141facdeb' ;; \
 		*) echo >&2 "error: unknown file: $filename"; exit 1 ;; \
 	esac; \
 	wget -O /tmp/prom.tar.gz "https://github.com/prometheus/prometheus/releases/download/v${PROMETHEUS_VERSION}/$filename"; \
