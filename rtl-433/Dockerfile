@@ -15,7 +15,7 @@ RUN set -eux; \
 	apt-get dist-clean
 
 # https://github.com/merbanan/rtl_433/releases
-ENV RTL_433_VERSION master
+ENV RTL_433_VERSION 25.02
 
 RUN set -eux; \
 	savedAptMark="$(apt-mark showmanual)"; \
