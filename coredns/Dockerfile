@@ -18,7 +18,6 @@ RUN set -eux; \
 		'mips64el') url='https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_mips64le.tgz'; sha256='3b3d9163e793da8938f9620585abb6ed9b21b03287fdef6a9e969be6f985e460' ;; \
 		'ppc64el') url='https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_ppc64le.tgz'; sha256='6ca6e44dc72744b8c600b4bd36ebb308c9e3ea09c7c8ea5ecfae279d005e5c00' ;; \
 		'riscv64') url='https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_riscv64.tgz'; sha256='6c47cb6e8093889bab1e80af3d2e13807a6385d663a916b3873e9aa9ee2978a4' ;; \
-		's390x') url='https://github.com/coredns/coredns/releases/download/v1.14.3/coredns_1.14.3_linux_s390x.tgz'; sha256='b08a90e9d05a46b46364765585fc1aa9f996b01e093e71ee14bab1de52c7c3fb' ;; \
 		*) echo >&2 "error: unsupported architecture '$dpkgArch'"; exit 1 ;; \
 	esac; \
 	\
