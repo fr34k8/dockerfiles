@@ -95,11 +95,6 @@
         "sha256": "93afeb084de22a858e55b43f4f02211f17646e70f2ccaffd82b224b671c8383f",
         "dpkgArch": "arm64"
       },
-      "ppc64le": {
-        "url": "https://github.com/containerd/containerd/releases/download/v1.7.35/containerd-1.7.35-linux-ppc64le.tar.gz",
-        "sha256": "75d06390eb3a346436db15d18990aa1d8314ba6cdcd4d9f40339857c230cfe35",
-        "dpkgArch": "ppc64el"
-      },
       "riscv64": {
         "url": "https://github.com/containerd/containerd/releases/download/v1.7.35/containerd-1.7.35-linux-riscv64.tar.gz",
         "sha256": "e5d8d44125428cad6f9b6f3b627d224a9a17813bdf6d22fcc6f431daed3f6222",
